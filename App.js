@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from "./Components/Navbar";
+import Headerbar from "./Components/Headerbar";
+import Flowbar from "./Components/Flowbar";
+import Footerbar from "./Components/Footerbar";
 
 function App() {
-  return (
-    <div className="Wrapper">
-      <header className="Headerbar">
-        <img src={logo} alt="logo" />
-         Learn React
-      </header>
+    return (
+        <div className="Wrapper">
+            <Headerbar/>
+            <Navbar/>
+            <Flowbar/>
+            <Footerbar/>
 
-      <Navbar />
-
-        <div className="Flowbar">Lenta lenta Novosti</div>
-        <div className="Footerbar">Contact US +788888 Podval</div>
-    </div>
-  );
+        </div>
+    );
 }
-
 
 
 export default App;

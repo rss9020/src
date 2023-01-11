@@ -1,40 +1,43 @@
 .Wrapper {
-  display: grid;
-  grid-auto-columns: 1fr 6fr;
-  grid-template-rows: 1fr 6fr 1fr;
-  grid-gap: 1em;
-  grid-template-areas:
+    display: grid;
+    grid-auto-columns: 1fr 6fr;
+    grid-template-rows: 1fr 20fr 1fr;
+    grid-gap: 1em;
+    grid-template-areas:
 "HeaderGrid HeaderGrid"
 "NavGrid FlowGrid"
 "FooterGrid FooterGrid";
-
 }
 
 .Headerbar {
- background-color: #282c34;
-  grid-area: HeaderGrid;
+    background-color: #282c34;
+    grid-area: HeaderGrid;
 }
 
-.Headerbar img{
-  width: 50px;
+.Headerbar img {
+    width: 50px;
 }
 
 .Navbar {
-  background-color: aqua;
-  grid-area: NavGrid;
-
+    background-color: aqua;
+    grid-area: NavGrid;
 }
+
 .Navbar ul {
-  list-style: none;
-  text-decoration: none;
+    list-style: none;
+}
+
+.Navbar a {
+    text-decoration: none;
 }
 
 .Flowbar {
-  background-color: darkgrey;
-  grid-area: FlowGrid;
+    background-color: darkgrey;
+    grid-area: FlowGrid;
 }
+
 .Footerbar {
-  background-color: burlywood;
-  grid-area: FooterGrid;
-  text-align: center;
+    background-color: burlywood;
+    grid-area: FooterGrid;
+    text-align: center;
 }
