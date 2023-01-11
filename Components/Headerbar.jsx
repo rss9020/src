@@ -6,7 +6,7 @@ function Headerbar() {
 
         <header className="Headerbar">
             <img src={logo} alt="logo"/>
-            Learn React
+            Tristagramm
         </header>
     );
 }
