@@ -1,26 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from "./Components/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-          <div>wd</div>
-        </a>
+    <div className="Wrapper">
+      <header className="Headerbar">
+        <img src={logo} alt="logo" />
+         Learn React
       </header>
+
+      <Navbar />
+
+        <div className="Flowbar">Lenta lenta Novosti</div>
+        <div className="Footerbar">Contact US +788888 Podval</div>
     </div>
   );
 }
+
+
 
 export default App;
