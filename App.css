@@ -7,3 +7,9 @@
 "NavGrid FlowGrid"
 "FooterGrid FooterGrid";
 }
+
+.Wrapper-App {
+    background-color: darkgrey;
+    grid-area: FlowGrid;
+    padding: 5px;
+}

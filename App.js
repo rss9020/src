@@ -1,19 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from "./Components/Navbar/Navbar";
 import Headerbar from "./Components/Headerbar/Headerbar";
 import Flowbar from "./Components/Flowbar/Flowbar";
 import Footerbar from "./Components/Footerbar/Footerbar";
+import Dialogs from "./Components/Dialogs/Dialogs";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
     return (
-        <div className="Wrapper">
-            <Headerbar/>
-            <Navbar/>
-            <Flowbar/>
-            <Footerbar/>
+        <BrowserRouter>
+            <div className="Wrapper">
+                <Headerbar/>
+                <Navbar/>
+                <div className="Wrapper-App">
+                    <Routes>
+                    <Route path="/dialogs" element={<Dialogs/>}/>
+                    <Route path="/flowbar" element={<Flowbar/>}/>
+                    </Routes>
+                </div>
+                <Footerbar/>
 
-        </div>
+            </div>
+        </BrowserRouter>
     );
 }
 
