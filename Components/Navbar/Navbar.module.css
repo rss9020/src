@@ -2,13 +2,5 @@
     background-color: #282c34;
     grid-area: NavGrid;
     padding: 5px;
-
-
 }
 
-
-.Navbar a {
-    color: azure;
-    text-decoration: none;
-
-}

@@ -1,12 +1,16 @@
-import NModules from './Navbar.module.css';
+import NModule from './Navbar.module.css';
+import {NavLink} from "react-router-dom";
+
+const setActive = ({isActive}) => isActive ? 'active-link' : 'noactive-link';
+
 
 function Navbar () {
     return (
-        <div className={NModules.Navbar}>
+        <div className={NModule.Navbar}>
 
-                <div><a href={"/flowbar"}>Flow</a></div>
-                <div><a href={"/dialogs"}>Dialogs</a></div>
-                <div><a href={"#t"}>Foto</a></div>
+                <div><NavLink to={"/flowbar"} className={setActive}>Flow</NavLink></div>
+                <div><NavLink to={"/dialogs"} className={setActive}>Dialogs</NavLink></div>
+                <div><NavLink to={"/profile"} className={setActive}>Profile</NavLink></div>
 
         </div>
     );

@@ -4,8 +4,8 @@ function Post(props) {
     return (
         <div className={PModule.Post}>
             <div>
-                <div>Autor {props.name} Post</div>
-                <div>Have {props.like} likes</div>
+                <div>Autor <b>{props.name}</b> Post</div>
+                <div>Have <b>{props.like} </b> likes</div>
             </div>
             <div>
                 <button>OK</button>

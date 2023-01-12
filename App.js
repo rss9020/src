@@ -5,6 +5,7 @@ import Flowbar from "./Components/Flowbar/Flowbar";
 import Footerbar from "./Components/Footerbar/Footerbar";
 import Dialogs from "./Components/Dialogs/Dialogs";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Profile from "./Components/Profile/Profile";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                     <Routes>
                     <Route path="/dialogs" element={<Dialogs/>}/>
                     <Route path="/flowbar" element={<Flowbar/>}/>
+                    <Route path="/profile" element={<Profile/>}/>
                     </Routes>
                 </div>
                 <Footerbar/>
