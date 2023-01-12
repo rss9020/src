@@ -1,7 +1,7 @@
 .Wrapper {
     display: grid;
     grid-auto-columns: 2fr 16fr;
-    grid-template-rows: 1fr 16fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
     grid-template-areas:
 "HeaderGrid HeaderGrid"
 "NavGrid FlowGrid"

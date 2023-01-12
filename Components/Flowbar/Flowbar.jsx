@@ -4,9 +4,10 @@ import FlModule from './Flowbar.module.css'
 function Flowbar() {
     return (
 
-        <div className={FlModule.Flowbar}>Lenta lenta Novosti
-            <Post name='Ivan'/>
-            <Post name='Maria'/>
+        <div className={FlModule.Flowbar}>Lenta
+            <Post name='Ivan' like='8'/>
+
+            <Post name='Maria' like='6'/>
 
 
         </div>
