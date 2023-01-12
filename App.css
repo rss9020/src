@@ -1,11 +1,9 @@
 .Wrapper {
     display: grid;
-    grid-auto-columns: 1fr 6fr;
-    grid-template-rows: 1fr 20fr 1fr;
-    grid-gap: 1em;
+    grid-auto-columns: 2fr 16fr;
+    grid-template-rows: 1fr 16fr 1fr;
     grid-template-areas:
 "HeaderGrid HeaderGrid"
 "NavGrid FlowGrid"
 "FooterGrid FooterGrid";
 }
-

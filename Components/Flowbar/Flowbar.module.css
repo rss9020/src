@@ -1,5 +1,7 @@
 .Flowbar {
     background-color: darkgrey;
     grid-area: FlowGrid;
+    padding: 5px;
+
 }
 

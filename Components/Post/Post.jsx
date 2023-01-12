@@ -1,8 +1,15 @@
 import PModule from './Post.module.css';
 
-function Post() {
+function Post(props) {
     return (
-        <div className={PModule.Post}>Post 1</div>
+        <div className={PModule.Post}>
+            <div>
+                Autor {props.name} Post
+            </div>
+            <div>
+                <button>OK</button>
+            </div>
+        </div>
     );
 }
 

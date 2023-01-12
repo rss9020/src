@@ -1,7 +1,11 @@
 .Headerbar {
-    background-color: #282c34;
+    background-color: cadetblue;
     grid-area: HeaderGrid;
-}
+    color: azure;
+    text-align: center;
+   padding: 20px;
+
+    }
 
 .Headerbar img {
     width: 50px;

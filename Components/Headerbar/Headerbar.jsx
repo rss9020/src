@@ -6,9 +6,9 @@ function Headerbar() {
 
         <header className={HModule.Headerbar}>
             <img src={logo} alt="logo"/>
-            Tristagramm
+           Tristagramm
         </header>
-    );
+);
 }
 
 export default Headerbar;

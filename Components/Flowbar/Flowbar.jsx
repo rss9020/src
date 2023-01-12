@@ -3,10 +3,15 @@ import FlModule from './Flowbar.module.css'
 
 function Flowbar() {
     return (
-        <div>
-        <div className={FlModule.Flowbar}>Lenta lenta Novosti</div>
-        <Post/>
+
+        <div className={FlModule.Flowbar}>Lenta lenta Novosti
+            <Post name='Ivan'/>
+            <Post name='Maria'/>
+
+
         </div>
+
+
     );
 }
 

@@ -1,6 +1,7 @@
 .Navbar {
-    background-color: aqua;
+    background-color: #282c34;
     grid-area: NavGrid;
+
 }
 
 .Navbar ul {
@@ -8,5 +9,6 @@
 }
 
 .Navbar a {
+    color: azure;
     text-decoration: none;
 }
