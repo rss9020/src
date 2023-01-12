@@ -1,9 +1,10 @@
 import PProfile from './Profile.module.css';
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 function Profile(props) {
     return (
-        <div>
-            My Profile
+        <div className={PProfile.Profile}>
+            <ProfileInfo/>
         </div>
     );
 }

@@ -13,11 +13,12 @@
     grid-area: FlowGrid;
     padding: 5px;
 }
-.noactive-link {
+
+.noactivelink {
     color: white;
     text-decoration: none;
 }
-.active-link {
+.activelink {
     color: gold;
     text-decoration: none;
 }

@@ -1,7 +1,7 @@
 import NModule from './Navbar.module.css';
 import {NavLink} from "react-router-dom";
 
-const setActive = ({isActive}) => isActive ? 'active-link' : 'noactive-link';
+const setActive = ({isActive}) => isActive ? 'activelink' : 'noactivelink';
 
 
 function Navbar () {

@@ -15,7 +15,7 @@ function App() {
                 <Navbar/>
                 <div className="Wrapper-App">
                     <Routes>
-                    <Route path="/dialogs" element={<Dialogs/>}/>
+                    <Route path="/dialogs/*" element={<Dialogs/>}/>
                     <Route path="/flowbar" element={<Flowbar/>}/>
                     <Route path="/profile" element={<Profile/>}/>
                     </Routes>
