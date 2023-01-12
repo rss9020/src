@@ -1,10 +1,10 @@
-import logo from "../logo.svg";
-import Navbar from "./Navbar";
+import logo from "../../logo.svg";
+import HModule from './Header.module.css'
 
 function Headerbar() {
     return (
 
-        <header className="Headerbar">
+        <header className={HModule.Headerbar}>
             <img src={logo} alt="logo"/>
             Tristagramm
         </header>

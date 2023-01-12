@@ -1,0 +1,8 @@
+.Headerbar {
+    background-color: #282c34;
+    grid-area: HeaderGrid;
+}
+
+.Headerbar img {
+    width: 50px;
+}

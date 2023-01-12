@@ -1,0 +1,5 @@
+.Footerbar {
+    background-color: burlywood;
+    grid-area: FooterGrid;
+    text-align: center;
+}

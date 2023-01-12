@@ -1,0 +1,12 @@
+.Navbar {
+    background-color: aqua;
+    grid-area: NavGrid;
+}
+
+.Navbar ul {
+    list-style: none;
+}
+
+.Navbar a {
+    text-decoration: none;
+}
