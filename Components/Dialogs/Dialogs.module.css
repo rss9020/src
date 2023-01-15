@@ -1,6 +1,8 @@
 .Dialog {
     display: grid;
     grid-template-columns: 1fr 8fr;
+
+
 }
 
 .UserList {
@@ -8,5 +10,8 @@
 }
 
 .Message {
-    background-color: cornsilk;
+    background-color: bisque;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px;
 }

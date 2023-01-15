@@ -6,26 +6,25 @@ let Posts = [
     {name: 'Maria', id: 1}
 ];
 
+//первые метод хранения данных. можно удалить, перенесено в index.js
+/*let a = [
+    {id: 1, name: 'Kerjik', like: 3},
+    {id: 2, name: 'Sturjik', like: 5},
+    {id: 3, name: 'Fufik', like: 6},
+    {id: 4, name: 'Hanorik', like: 6},
+    {id: 5, name: 'Bublik', like: 6}
+];
+
+let b = a.map((ddd) => <Post name={ddd.name} like={ddd.like}/>);*/
 
 
-let a = [
-    {name: 'Kerjik', like: 3},
-    {name: 'Sturjik', like: 5},
-    {name: 'Fufik', like: 6}
-    ];
-let b = a.map( (ddd) => <Post name={ddd.name} like={ddd.like}/>  );
-
-function Flowbar() {
+function Flowbar(props) {
+    let b1 = props.UsersNamePostProps.map((ddd) => <Post name={ddd.name} like={ddd.like}/>);
     return (
+        <div className={FlModule.Flowbar}>
 
-        <div><h3>Lenta</h3>
-            <Post name='Ivan' like='0'/>
-            <Post name='Maria' like='6'/>
-           {
-               [<Post name='Sidor' like='3'/>, <Post name='Serik' like='2'/>]
-           }
-            {b}
 
+            {b1}
         </div>
 
 

@@ -1,8 +1,14 @@
 import ULModule from './UserList.module.css';
-import {NavLink} from "react-router-dom";
 import UserItem from "./UserItem/UserItem";
 
-function UserList() {
+let UserNames = [
+    {name: 'Ivan'},
+    {name: 'Kaban'},
+    {name: 'Bratan'},
+    {name: 'Bodan'},
+];
+
+function UserList(props) {
     return (
         <div className={ULModule.UserList}>
             <UserItem name={"Ivan"}/>
@@ -10,6 +16,9 @@ function UserList() {
             <UserItem name={"Vladimir"}/>
             <UserItem name={"Aleksander"}/>
             <UserItem name={"Oleg"}/>
+            <UserItem name={props.UserNameProps}/>
+
+
 
 
         </div>
