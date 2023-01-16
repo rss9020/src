@@ -2,9 +2,9 @@
     background-color: cadetblue;
     grid-area: HeaderGrid;
     color: azure;
-    text-align: center;
-   padding: 20px;
 
+text-align: center;
+    padding-top: 14px;
     }
 
 .Headerbar img {

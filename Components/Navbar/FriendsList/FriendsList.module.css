@@ -1,0 +1,10 @@
+.FriendsList {
+    background-color: #282c34;
+    padding: 5px;
+
+}
+img {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+}

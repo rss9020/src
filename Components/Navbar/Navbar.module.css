@@ -2,5 +2,23 @@
     background-color: #282c34;
     grid-area: NavGrid;
     padding: 5px;
+
 }
 
+
+.NavbarWrapper {
+    grid-area: NavGrid;
+    background-color: #282c34;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr 4fr;
+
+
+}
+
+.NavbarMiddle {
+    background-color: #282c34;
+
+
+}

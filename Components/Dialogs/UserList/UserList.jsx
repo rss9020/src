@@ -1,24 +1,15 @@
 import ULModule from './UserList.module.css';
 import UserItem from "./UserItem/UserItem";
 
-let UserNames = [
-    {name: 'Ivan'},
-    {name: 'Kaban'},
-    {name: 'Bratan'},
-    {name: 'Bodan'},
-];
+
 
 function UserList(props) {
+  let UsersNameDialogMap = props.UsersNameDialogProps.map((ddd) => <UserItem name={ddd.name}/>);
+
     return (
         <div className={ULModule.UserList}>
-            <UserItem name={"Ivan"}/>
-            <UserItem name={"Igor"}/>
-            <UserItem name={"Vladimir"}/>
-            <UserItem name={"Aleksander"}/>
-            <UserItem name={"Oleg"}/>
-            <UserItem name={props.UserNameProps}/>
-
-
+   {/*load data from array index.js*/}
+       {UsersNameDialogMap}
 
 
         </div>

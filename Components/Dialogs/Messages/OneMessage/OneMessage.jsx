@@ -1,13 +1,18 @@
-import POneMessage from './OneMessage.module.css';
+import CSS from './OneMessage.module.css';
 
 function OneMessage(props) {
+
+
     return (
 
-        <div className={POneMessage.Message}>
+        <div className={CSS.OneMessage}>
+
             {props.MessageValue}
+
         </div>
 
     );
 }
+
 
 export default OneMessage

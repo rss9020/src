@@ -7,9 +7,9 @@ import Dialogs from "./Components/Dialogs/Dialogs";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Profile from "./Components/Profile/Profile";
 
-function App(props) {
+const App = (props) => {
     return (
-        <BrowserRouter>
+         <BrowserRouter>
             <div className="Wrapper">
                 <Headerbar/>
                 <Navbar/>
@@ -17,9 +17,11 @@ function App(props) {
 
 
                     <Routes>
-                    <Route path="/dialogs/*" element={<Dialogs UserNameProps={props.UserNameProps} MessagesValueProps={props.MessagesValueProps} />}/>
-                    <Route path="/flowbar" element={<Flowbar UsersNamePostProps={props.UsersNamePostProps} />}/>
-                    <Route path="/profile" element={<Profile/>}/>
+                        <Route path="/dialogs/*" element={<Dialogs UsersNameDialogProps={props.StateProps.DialogsPage.UsersNameDialog}
+                                                                   MessagesValueProps={props.StateProps.DialogsPage.MessagesValue}/>}/>
+                      <Route path="/flowbar" element={<Flowbar
+                            UsersNamePostProps={props.StateProps.FlowbarPage.UsersNamePost}/>}/>
+                        <Route path="/profile" element={<Profile/>}/>
                     </Routes>
                 </div>
                 <Footerbar/>

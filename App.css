@@ -1,17 +1,19 @@
 .Wrapper {
     display: grid;
-    grid-auto-columns: 2fr 16fr;
-    grid-template-rows: 1fr 8fr 1fr;
+    grid-auto-columns: 1fr 12fr;
+    grid-template-rows: 50px 4fr 50px;
     grid-template-areas:
 "HeaderGrid HeaderGrid"
 "NavGrid FlowGrid"
 "FooterGrid FooterGrid";
+    height: 100vh;
 }
 
 .Wrapper-App {
-    background-color: darkgrey;
+    background-color: #282c34;
     grid-area: FlowGrid;
     padding: 5px;
+
 }
 
 .noactivelink {

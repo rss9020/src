@@ -7,7 +7,7 @@ function Dialogs(props) {
     return (
         <div className={PDialogs.Dialog}>
 
-            <UserList UserNameProps = {props.UserNameProps}/>
+            <UserList UsersNameDialogProps = {props.UsersNameDialogProps}/>
             <Messages MessagesValueProps={props.MessagesValueProps}/>
 
 
