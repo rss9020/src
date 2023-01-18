@@ -1,4 +1,4 @@
-import PMessages from './Messages.module.css';
+import CSS from './Messages.module.css';
 import OneMessage from "./OneMessage/OneMessage";
 
 function Messages(props) {
@@ -7,8 +7,8 @@ function Messages(props) {
 
     return (
 
-        <div className={PMessages.Messages}>
-            {/*//Массив заполняется мапом, данные в index.js*/}
+        <div className={CSS.Messages}>
+            {/*//Массив заполняется мапом, данные в state.js*/}
             {MessageValueMap}
 
         </div>

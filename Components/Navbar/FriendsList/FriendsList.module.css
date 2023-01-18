@@ -1,9 +1,12 @@
 .FriendsList {
     background-color: #282c34;
     padding: 5px;
-
+color: azure;
 }
-img {
+
+
+
+.FriendsList img {
     width: 60px;
     height: 60px;
     border-radius: 15px;

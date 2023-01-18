@@ -9,7 +9,7 @@ import Profile from "./Components/Profile/Profile";
 
 const App = (props) => {
     return (
-         <BrowserRouter>
+        <BrowserRouter>
             <div className="Wrapper">
                 <Headerbar/>
                 <Navbar/>
@@ -17,11 +17,13 @@ const App = (props) => {
 
 
                     <Routes>
-                        <Route path="/dialogs/*" element={<Dialogs UsersNameDialogProps={props.StateProps.DialogsPage.UsersNameDialog}
-                                                                   MessagesValueProps={props.StateProps.DialogsPage.MessagesValue}/>}/>
-                      <Route path="/flowbar" element={<Flowbar
+                        <Route path="/dialogs/*"
+                               element={<Dialogs UsersNameDialogProps={props.StateProps.DialogsPage.UsersNameDialog}
+                                                 MessagesValueProps={props.StateProps.DialogsPage.MessagesValue}/>}/>
+                        <Route path="/flowbar" element={<Flowbar
                             UsersNamePostProps={props.StateProps.FlowbarPage.UsersNamePost}/>}/>
                         <Route path="/profile" element={<Profile/>}/>
+                        <Route path="/*" element={<Profile/>}/>
                     </Routes>
                 </div>
                 <Footerbar/>

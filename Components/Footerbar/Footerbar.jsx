@@ -1,8 +1,8 @@
-import FModule from './Footer.module.css'
+import CSS from './Footer.module.css'
 
 function Footerbar() {
     return (
-        <div className={FModule.Footerbar}>Contact US +788888 Podval</div>
+        <div className={CSS.Footerbar}>Contact US +788888 Podval</div>
     );
 }
 

@@ -1,9 +1,28 @@
-.Post {
+.PostWrapper {
     background-color: bisque;
     border-radius: 10px;
-    padding: 5px;
-    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    margin-bottom: 10px;
+}
 
+.Post {
+    background-color: aquamarine;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 5px;
+}
+
+.PostValue {
+    background-color: bisque;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.PostValue Img {
+    width: 600px;
 }
 
 .ButtonBlock {

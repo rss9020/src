@@ -1,12 +1,22 @@
-import PModule from './Post.module.css';
+import CSS from './Post.module.css';
 
 function Post(props) {
     return (
-        <div className={PModule.Post}>
-            <div>Autor <b>{props.name}</b> Post</div>
-            <div>Have <b>{props.like} </b> likes</div>
-            <div className={PModule.ButtonBlock}>
-                <button>OK</button> <button>neOK</button>
+        <div className={CSS.PostWrapper}>
+
+            <div className={CSS.Post}>
+                <div>Autor <b>{props.name}</b> Post</div>
+                <div>Have <b>{props.like} </b> likes</div>
+                <div className={CSS.ButtonBlock}>
+                    <button>OK</button>
+                    <button>neOK</button>
+                </div>
+            </div>
+            <div className={CSS.PostValue}>
+
+                <img src={`${props.src}`} alt={`${props.src}`}/>
+            <div>    {`${props.src}`}</div>
+
             </div>
         </div>
     );
