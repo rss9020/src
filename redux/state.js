@@ -16,7 +16,7 @@ let state = {
     DialogsPage: {
         MessagesValue: [
             {id: 1, incoming: 1, MessageValue: 'Hello'},
-            {id: 2, incoming: 0, MessageValue: 'Where you from'},
+            {id: 2, incoming: 0, MessageValue: 'Where you from?'},
             {id: 3, incoming: 1, MessageValue: 'I from Canada'},
             {id: 4, incoming: 0, MessageValue: 'It is great!'},
             {id: 5, incoming: 1, MessageValue: 'I want travel to Canada'},

@@ -17,8 +17,8 @@ function Dialogs(props) {
             <Messages MessagesValueProps={props.MessagesValueProps}/>
 
             <div className={CSS.AddPost}>
-                <textarea ref={PostArea}></textarea>
-                <button onClick={SendMessage}>Send message</button>
+                <div><textarea ref={PostArea} placeholder={'Сообщение'}></textarea></div>
+                <div><button onClick={SendMessage}>Send message</button></div>
             </div>
         </div>
     );

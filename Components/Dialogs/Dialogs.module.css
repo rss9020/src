@@ -23,3 +23,19 @@
     grid-column-end: 3;
 
 }
+
+.AddPost textarea{
+
+    border-radius: 10px;
+
+}
+
+.AddPost button{
+
+    border-radius: 10px;
+
+}
+
+
+
+
