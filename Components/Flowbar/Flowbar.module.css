@@ -1,5 +1,17 @@
 .Flowbar {
 
-
 }
 
+.Flowbar textarea {
+
+    background-color: transparent;
+    color: azure;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.Flowbar button {
+
+    border-radius: 10px;
+margin-bottom: 10px;
+}

@@ -6,13 +6,13 @@ import NavbarMenu from "./NavbarMenu/NavbarMenu";
 const setActive = ({isActive}) => isActive ? 'activelink' : 'noactivelink';
 
 
-function Navbar() {
+const Navbar = (props) => {
     return (
        /* <div className={CSS.Navbar}>*/
             <div className={CSS.NavbarWrapper}>
                 <NavbarMenu/>
                 <div className={CSS.NavbarMiddle}></div>
-             <FriendsList/>
+             <FriendsList FriendsListProps={props.FriendsListProps} />
             </div>
 
       /*  </div>*/

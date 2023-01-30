@@ -16,26 +16,4 @@
     padding: 5px;
 }
 
-.AddPost {
-
-    grid-row-start: 2;
-    grid-column-start: 1;
-    grid-column-end: 3;
-
-}
-
-.AddPost textarea{
-
-    border-radius: 10px;
-
-}
-
-.AddPost button{
-
-    border-radius: 10px;
-
-}
-
-
-
 

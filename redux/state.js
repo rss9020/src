@@ -1,3 +1,5 @@
+import {RenderTree} from "../render";
+
 let state = {
 
 
@@ -32,6 +34,24 @@ let state = {
             {id: 5, name: 'Vova'}
         ]
     }
+    ,
+
+    Friends: {
+        FriendsList: [
+            {id: 1, name: 'Ziba', src: 'https://vsememy.ru/wp-content/cache/thumb/2c8f47557_320x200.jpg'},
+            {id: 2, name: 'Buba', src: 'http://sun9-23.userapi.com/s/v1/if1/N3vjfCFSxqflvFe0EyKU4NB8GWWZMGDBpZOUhx2DGJpJl52SjiaUqx3sZoNIHQSFcMBgag.jpg?size=200x270&quality=96&crop=0,0,200,270&ava=1'},
+            {id: 3, name: 'Zhuzha', src: 'https://steamuserimages-a.akamaihd.net/ugc/1027328734216725904/A78445AD26E88C8331629E52FC752B5B09253E71/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false'},
+            {id: 4, name: 'Druka', src: 'https://img.freepik.com/premium-vector/woman-avatars-with-different-emotions-girl-with-spring-or-summer-flowers-and-a-wreath-in-black-hair_427567-1481.jpg'},
+            {id: 5, name: 'Kret', src: 'https://trashbox.ru/ifiles/220798_004e6a_img_20140503_122504.jpg_min1/avatarki.-1.jpg'}
+        ]
+    }
+
+}
+export let SendMessageState = (Message) => {
+
+    let NewMessage = {id:7, incoming:0, MessageValue: Message};
+    state.DialogsPage.MessagesValue.push(NewMessage);
+    RenderTree(state, SendMessageState);
 
 }
 

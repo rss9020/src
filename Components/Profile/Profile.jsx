@@ -1,10 +1,11 @@
 import CSS from './Profile.module.css';
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
-function Profile(props) {
+const Profile = (props) => {
     return (
         <div className={CSS.Profile}>
-            <ProfileInfo/>
+            <ProfileInfo name={props.name}/>
+
 
         </div>
     );

@@ -12,17 +12,26 @@ const App = (props) => {
         <BrowserRouter>
             <div className="Wrapper">
                 <Headerbar/>
-                <Navbar/>
+                <Navbar FriendsListProps={props.StateProps.Friends.FriendsList}/>
                 <div className="Wrapper-App">
 
 
                     <Routes>
                         <Route path="/dialogs/*"
                                element={<Dialogs UsersNameDialogProps={props.StateProps.DialogsPage.UsersNameDialog}
-                                                 MessagesValueProps={props.StateProps.DialogsPage.MessagesValue}/>}/>
+                                                 MessagesValueProps={props.StateProps.DialogsPage.MessagesValue}
+                                                 SendMessageProps={props.SendMessageProps}
+                               />}
+                        />
                         <Route path="/flowbar" element={<Flowbar
                             UsersNamePostProps={props.StateProps.FlowbarPage.UsersNamePost}/>}/>
-                        <Route path="/profile" element={<Profile/>}/>
+                        <Route path="/profile/my" element={<Profile name={'Stalker'}/>}/>
+                        <Route path="/profile/Ziba" element={<Profile name={'Ziba'}/>}/>
+                        <Route path="/profile/Buba" element={<Profile name={'Buba'}/>}/>
+                        <Route path="/profile/Zhuzha" element={<Profile name={'Zhuzha'}/>}/>
+                        <Route path="/profile/Druka" element={<Profile name={'Druka'}/>}/>
+                        <Route path="/profile/Kret" element={<Profile name={'Kret'}/>}/>
+
                         <Route path="/*" element={<Profile/>}/>
                     </Routes>
                 </div>

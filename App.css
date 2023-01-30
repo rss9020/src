@@ -20,13 +20,13 @@
     color: white;
     text-decoration: none;
 }
+
 .activelink {
     color: gold;
     text-decoration: none;
 }
 
-.IncomingMessage
-{
+.IncomingMessage {
     text-align: left;
     border-color: aqua;
     background-color: darkgrey;
@@ -34,8 +34,7 @@
     padding-left: 50px;
 }
 
-.OutcomingMessage
-{
+.OutcomingMessage {
     text-align: left;
     padding-left: 10px;
 }

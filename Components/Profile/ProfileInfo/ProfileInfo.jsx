@@ -8,7 +8,7 @@ function ProfileInfo(props) {
             </div>
 
             <div className={CSS.ProfileInfo}>
-                Name: Stalker<br/>
+                Name: {props.name}<br/>
                 Age: 33<br/>
                 Gender: Male<br/>
             </div>
