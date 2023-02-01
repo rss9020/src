@@ -6,8 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import state from "./redux/state";
 import {SendMessageState} from "./redux/state";
 import {RenderTree} from "./render";
+import {AddLikeState} from "./redux/state";
+import {DisLikeState} from "./redux/state";
+import {AddPostState} from "./redux/state";
 
-RenderTree(state, SendMessageState);
+RenderTree(state, SendMessageState, AddLikeState, DisLikeState, AddPostState);
 
 
 // If you want to start measuring performance in your app, pass a function

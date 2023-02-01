@@ -1,6 +1,17 @@
 import CSS from './Post.module.css';
 
+
 function Post(props) {
+    let AddLike = () => {
+
+        props.AddLikeProps(props.id);
+
+    }
+    let DisLike = () => {
+        props.DisLikeProps(props.id);
+
+    }
+
     return (
         <div className={CSS.PostWrapper}>
 
@@ -8,8 +19,8 @@ function Post(props) {
                 <div>Autor <b>{props.name}</b> Post</div>
                 <div>Have <b>{props.like} </b> likes</div>
                 <div className={CSS.ButtonBlock}>
-                    <button>OK</button>
-                    <button>neOK</button>
+                    <button onClick={AddLike}>OK</button>
+                    <button onClick={DisLike}>neOK</button>
                 </div>
             </div>
             <div className={CSS.PostValue}>

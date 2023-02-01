@@ -21,10 +21,15 @@ const App = (props) => {
                                element={<Dialogs UsersNameDialogProps={props.StateProps.DialogsPage.UsersNameDialog}
                                                  MessagesValueProps={props.StateProps.DialogsPage.MessagesValue}
                                                  SendMessageProps={props.SendMessageProps}
-                               />}
+                                                                       />}
                         />
                         <Route path="/flowbar" element={<Flowbar
-                            UsersNamePostProps={props.StateProps.FlowbarPage.UsersNamePost}/>}/>
+                            UsersNamePostProps={props.StateProps.FlowbarPage.UsersNamePost}
+                            AddLikeProps={props.AddLikeProps}
+                            DisLikeProps={props.DisLikeProps}
+                            AddPostProps={props.AddPostProps}
+
+                        />}/>
                         <Route path="/profile/my" element={<Profile name={'Stalker'}/>}/>
                         <Route path="/profile/Ziba" element={<Profile name={'Ziba'}/>}/>
                         <Route path="/profile/Buba" element={<Profile name={'Buba'}/>}/>
